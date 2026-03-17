@@ -3,10 +3,392 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mezzica</title>
+    <title>Mizzica! Gelateria & Cafe | Toronto</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to Mezzica</h1>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Mizzica Gelateria & Cafe" class="logo-img">
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://online.mizzica.ca" class="btn btn-nav" target="_blank">Order Online</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-image">
+            <img src="images/hero.webp" alt="Mizzica gelato, frappe and tiramisu">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-bg">
+            <div class="hero-leaf hero-leaf-1"></div>
+            <div class="hero-leaf hero-leaf-2"></div>
+            <div class="hero-leaf hero-leaf-3"></div>
+        </div>
+        <div class="container hero-content">
+            <span class="hero-tagline">Che Buono...!</span>
+            <h1>The Best Gelato<br>Is Made With <em>Love</em></h1>
+            <p class="hero-subtitle">World award-winning artisan gelato with delicious homemade pastry and Italian coffee in the heart of Toronto.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Explore Our Menu</a>
+                <a href="https://online.mizzica.ca" class="btn btn-outline" target="_blank">Order Now</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About / Our Story -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-img about-img-1">
+                        <img src="images/gelato-cups.webp" alt="Assorted gelato cups from above" loading="lazy">
+                    </div>
+                    <div class="about-img about-img-2">
+                        <img src="images/cannolo-ricotta.webp" alt="Fresh cannolo with ricotta" loading="lazy">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-label">Our Story</span>
+                    <h2>A Taste of Sicily in Downtown Toronto</h2>
+                    <p>We are a family-owned and operated gelateria and cafe in downtown Toronto's heart. Inspired by the flavors and culture of our hometown in Italy, we bring you authentic Sicilian gelato made fresh every day.</p>
+                    <p>Our gelato is crafted in-house with premium products and high-quality ingredients. Every scoop tells a story of tradition, passion, and the warmth of Italian hospitality.</p>
+                    <p class="about-note">We make gelato, not ice cream. ;)</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">Fresh</span>
+                            <span class="stat-label">Made Daily</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Award</span>
+                            <span class="stat-label">Winning</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Family</span>
+                            <span class="stat-label">Owned</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What We Offer</span>
+                <h2>Our Products</h2>
+                <p>From authentic Sicilian gelato to freshly baked pastries and rich Italian espresso.</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/gelato-cups.webp" alt="Artisan gelato" loading="lazy">
+                    </div>
+                    <h3>Artisan Gelato</h3>
+                    <p>Made fresh daily with premium ingredients. From Sicilian Pistachio to Hazelnut from Piemonte, our flavors rotate to bring you the best of Italy.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/cannoli-plate.webp" alt="Pastries and cannoli" loading="lazy">
+                    </div>
+                    <h3>Pastries & Cakes</h3>
+                    <p>Hand-piped cannoli, tiramisu, pannacotta, Sicilian cassata, triple chocolate cake, carrot cake, and our famous pistachio gelato cake.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/cappuccino-cassata.jpg" alt="Italian coffee and pastries" loading="lazy">
+                    </div>
+                    <h3>Italian Coffee</h3>
+                    <p>Authentic Italian espresso, cappuccino, frappe, and refreshing drinks to complement your gelato experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Highlights -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Favorites</span>
+                <h2>Menu Highlights</h2>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/gelato-cups.webp" alt="Sicilian Pistachio Gelato" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Sicilian Pistachio Gelato</h3>
+                        <p>Our signature flavor — made with authentic Sicilian pistachios for a rich, nutty, unforgettable taste.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/cannoli-plate.webp" alt="Hand-Piped Cannoli" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Hand-Piped Cannoli</h3>
+                        <p>Crispy shells filled to order with pistachio, ricotta, custard, or Nutella cream. Always fresh, never pre-filled.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/hero.webp" alt="Homemade Tiramisu" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Homemade Tiramisu</h3>
+                        <p>Classic Italian tiramisu, layered with espresso-soaked ladyfingers and mascarpone cream.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/cafe-product.webp" alt="Hazelnut Gelato" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Hazelnut from Piemonte</h3>
+                        <p>Premium Piemonte hazelnuts blended into a velvety, aromatic gelato that melts on your tongue.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/pistachio-cake.jpg" alt="Pistachio Gelato Cake" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pistachio Gelato Cake</h3>
+                        <p>A showstopper dessert combining award-winning gelato with layers of cake and pistachio crunch.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/cappuccino-cassata.jpg" alt="Italian Espresso" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Italian Espresso</h3>
+                        <p>Bold, smooth, and authentically Italian. The perfect start or finish to your Mizzica experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- As Seen On -->
+    <section class="featured">
+        <div class="container">
+            <span class="section-label center">As Seen On</span>
+            <div class="featured-logos">
+                <img src="images/press-torontostar.png" alt="Toronto Star" class="featured-logo-img" loading="lazy">
+                <img src="images/press-blogto.png" alt="BlogTO" class="featured-logo-img" loading="lazy">
+                <img src="images/press-breakfasttv.webp" alt="Breakfast Television" class="featured-logo-img" loading="lazy">
+                <img src="images/press-thesocial.png" alt="The Social" class="featured-logo-img" loading="lazy">
+                <img src="images/press-narcity.png" alt="NarcCity" class="featured-logo-img" loading="lazy">
+                <img src="images/press-foodism.png" alt="Foodism" class="featured-logo-img" loading="lazy">
+                <img src="images/press-omnitv.png" alt="Omni TV" class="featured-logo-img" loading="lazy">
+                <img src="images/press-citylife.png" alt="City Life Magazine" class="featured-logo-img" loading="lazy">
+                <img src="images/press-tastetoronto.png" alt="Taste Toronto" class="featured-logo-img" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Mizzica Moments</span>
+                <h2>Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-lg">
+                    <img src="images/hero.webp" alt="Gelato cup, frappe and tiramisu" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cannoli-plate.webp" alt="Cannoli platter" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cappuccino-cassata.jpg" alt="Cappuccino and cassata" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cannolo-ricotta.webp" alt="Fresh cannolo" loading="lazy">
+                </div>
+                <div class="gallery-item gallery-item-lg">
+                    <img src="images/cafe-product.webp" alt="Cafe products" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pistachio-cake.jpg" alt="Pistachio gelato cake" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/chocolate-cake.webp" alt="Triple chocolate cake" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gelato-cups.webp" alt="Assorted gelato cups" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations -->
+    <section class="locations" id="locations">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Visit Us</span>
+                <h2>Our Locations</h2>
+            </div>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-badge">Queen West</div>
+                    <h3>Queen Street</h3>
+                    <address>307 Queen St W, Toronto, ON M5V 2A4</address>
+                    <div class="location-details">
+                        <div class="location-hours">
+                            <h4>Hours</h4>
+                            <ul>
+                                <li><span>Mon - Wed</span><span>7:00 AM - 11:00 PM</span></li>
+                                <li><span>Thu - Fri</span><span>7:00 AM - 12:00 AM</span></li>
+                                <li><span>Saturday</span><span>8:00 AM - 12:00 AM</span></li>
+                                <li><span>Sunday</span><span>8:00 AM - 11:00 PM</span></li>
+                            </ul>
+                        </div>
+                        <a href="tel:+14162252271" class="location-phone">+1 (416) 225-2271</a>
+                    </div>
+                    <a href="https://maps.google.com/?q=307+Queen+St+W+Toronto+ON" target="_blank" class="btn btn-secondary">Get Directions</a>
+                </div>
+                <div class="location-card">
+                    <div class="location-badge">Midtown</div>
+                    <h3>Yonge Street</h3>
+                    <address>2375 Yonge St, Toronto, ON M4P 2C8</address>
+                    <div class="location-details">
+                        <div class="location-hours">
+                            <h4>Hours</h4>
+                            <ul>
+                                <li><span>Mon - Wed</span><span>8:00 AM - 11:00 PM</span></li>
+                                <li><span>Thu - Fri</span><span>8:00 AM - 12:00 AM</span></li>
+                                <li><span>Saturday</span><span>9:00 AM - 12:00 AM</span></li>
+                                <li><span>Sunday</span><span>9:00 AM - 11:00 PM</span></li>
+                            </ul>
+                        </div>
+                        <a href="tel:+14167547890" class="location-phone">+1 (416) 754-7890</a>
+                    </div>
+                    <a href="https://maps.google.com/?q=2375+Yonge+St+Toronto+ON" target="_blank" class="btn btn-secondary">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-content">
+                    <span class="section-label">Get In Touch</span>
+                    <h2>Let's Connect</h2>
+                    <p>Have a question, want to book a catering event, or just say hello? We'd love to hear from you.</p>
+                    <div class="contact-info">
+                        <a href="mailto:hello@mizzica.ca" class="contact-link">
+                            <span class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13L2 4"/></svg>
+                            </span>
+                            hello@mizzica.ca
+                        </a>
+                        <a href="tel:+14162252271" class="contact-link">
+                            <span class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            </span>
+                            +1 (416) 225-2271
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://facebook.com/mizzicagelato" target="_blank" aria-label="Facebook" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/mizzicagelato/" target="_blank" aria-label="Instagram" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                        <a href="https://tiktok.com/@mizzicagelato" target="_blank" aria-label="TikTok" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.46V13.2a8.16 8.16 0 005.58 2.17V12a4.83 4.83 0 01-3.77-1.54V6.69h3.77z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <div class="cta-card">
+                        <h3>Order Online</h3>
+                        <p>Skip the line and order your favorite gelato, pastries, and coffee for pickup.</p>
+                        <a href="https://online.mizzica.ca" target="_blank" class="btn btn-primary">Order Now</a>
+                    </div>
+                    <div class="cta-card cta-card-alt">
+                        <h3>Gift Cards</h3>
+                        <p>Share the sweetness! Give the gift of Mizzica to someone special.</p>
+                        <a href="https://online.mizzica.ca" target="_blank" class="btn btn-secondary">Buy Gift Card</a>
+                    </div>
+                    <div class="delivery-badges">
+                        <span class="delivery-badge">Uber Eats</span>
+                        <span class="delivery-badge">DoorDash</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo logo-footer">
+                        <img src="images/logo.png" alt="Mizzica" class="logo-img">
+                    </a>
+                    <p>World award-winning artisan gelato with delicious homemade pastry and Italian coffee.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:hello@mizzica.ca">hello@mizzica.ca</a></li>
+                        <li><a href="https://www.instagram.com/mizzicagelato/" target="_blank">Instagram</a></li>
+                        <li><a href="https://facebook.com/mizzicagelato" target="_blank">Facebook</a></li>
+                        <li><a href="https://tiktok.com/@mizzicagelato" target="_blank">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mizzica! Gelateria & Cafe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
